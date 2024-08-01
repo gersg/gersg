@@ -1,26 +1,19 @@
 <h1 align="center">Olá, eu sou o Gerson Espindola 👋</h1>
 <h3 align="center">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
 
-<!-- Mensagem de construção -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Construção-yellow?style=flat-square" alt="Em Construção" />
-  <br />
-  Este perfil está em construção. Novas atualizações em breve!
-  <br />   
-</p>
 
-
-
-<p align="center">
-  <a href="https://github.com/gersg">
-    <img src="https://img.shields.io/github/followers/gersg?style=social" alt="GitHub followers" />
-  </a>
-  <a href="https://www.linkedin.com/in/gersg/">
-    <img src="https://img.shields.io/badge/LinkedIn-GersonEspindola-blue" alt="LinkedIn Profile" />
-  </a>
-  <a href="mailto:gersgdev@gmail.com">
-    <img src="https://img.shields.io/badge/Email-gersgdev@gmail.com-red" alt="Email" />
-  </a>
+<p 
+  <h3 align="center">
+  Este perfil está em construção. Novas atualizações em breve!</h3>
+  <br />  
+  <p align="center">
+  <img src="https://img.shields.io/badge/status%20em%20construção-%23FF9900" alt="Status em contrução" /> 
+  <img src="https://img.shields.io/badge/status%20em%20construção-%2333212a" alt="Status em contrução" />
+  <img src="https://img.shields.io/badge/status em construção-%23E34F26" alt="Status em contrução" />
+  
+  
+</p>  
+  
 </p>
 
 <h2>Sobre Mim</h2>
