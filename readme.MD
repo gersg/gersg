@@ -1,27 +1,22 @@
-<h1 align="center">Olá, eu sou o Gerson Espindola 👋</h1>
-<h3 align="center">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
+<img align="left" matrix src="https://github.com/gersg.png?size=150"> 
+<h1 align="middle"> Olá, eu sou o Gerson Espindola </h1>
 
-<p>
-  
+<h3 align="middle">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
  
- 
-  
-  
-</p>  
-  
+ <p align="middle">
+    <a  href="https://www.linkedin.com/in/gersg/"> </a> 
+    <img align="e" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+ </p> 
+
 </p>
-
-<h2>Sobre Mim</h2>
-<p>
-um desenvolvedor apaixonado por tecnologia, atualmente em transição profissional e sempre em busca de novos desafios. Minha jornada é marcada por uma rica experiência de vida e um compromisso profundo com a excelência no desenvolvimento de software.
-
-Aqui, você encontrará projetos que exemplificam minha dedicação à inovação e à qualidade. Cada linha de código é cuidadosamente elaborada, com o objetivo de oferecer soluções eficientes e criar experiências impactantes. Estou constantemente evoluindo, aprendendo e aplicando novas práticas para garantir que meus projetos não apenas resolvam problemas, mas também proporcionem valor real.
-
-Convido você a explorar meu trabalho e a se conectar comigo para discutirmos como podemos colaborar e crescer juntos.
+<br>
+<h2>Sobre Mim </h2>
+    <p>
+      Sou um desenvolvedor apaixonado por tecnologia, e Convido você a explorar meu trabalho e a se conectar comigo para discutirmos como podemos colaborar e crescer juntos.
 
 </p>
 
-<h2>Cubos Academy - Desenvolimento de Software -  <img src="https://img.shields.io/badge/Studying-%" alt="Studying" /></h2>
+<h2><align="middle">Cubos Academy - Desenvolimento de Software </h2>
 <details>
   <summary><strong>Modulo 01</strong></summary>
  <ul>
@@ -177,8 +172,8 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
     </details></ul>
 </details>
 
-<h2>Escola da Nuvem/ AWS -  <img src="https://img.shields.io/badge/Studying-%" alt="Studying" /></h2>
-<details>
+<h2>Escola da Nuvem/ AWS </h2>
+<details>g
   <summary><strong>Cloud Pratitioner </strong></summary>
  <ul>
     <details>
