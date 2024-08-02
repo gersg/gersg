@@ -1,15 +1,10 @@
 <h1 align="center">Olá, eu sou o Gerson Espindola 👋</h1>
 <h3 align="center">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
 
-
-<p 
-  <h3 align="center">
-  Este perfil está em construção. Novas atualizações em breve!</h3>
-  <br />  
-  <p align="center">
-  <img src="https://img.shields.io/badge/status%20em%20construção-%23FF9900" alt="Status em contrução" /> 
-  <img src="https://img.shields.io/badge/status%20em%20construção-%2333212a" alt="Status em contrução" />
-  <img src="https://img.shields.io/badge/status em construção-%23E34F26" alt="Status em contrução" />
+<p>
+  
+ 
+ 
   
   
 </p>  
@@ -26,7 +21,7 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
 
 </p>
 
-<h2>Cubos Academy - Desenvolimento de Software</h2>
+<h2>Cubos Academy - Desenvolimento de Software -  <img src="https://img.shields.io/badge/estudando-%" alt="Estudando" /></h2>
 <details>
   <summary><strong>Modulo 01</strong></summary>
  <ul>
@@ -182,9 +177,9 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
     </details></ul>
 </details>
 
-<h2>Escola da Nuvem - AWS</h2>
+<h2>Escola da Nuvem/ AWS -  <img src="https://img.shields.io/badge/estudando-%" alt="Estudando" /></h2>
 <details>
-  <summary><strong>Cloud Pratitioner</strong></summary>
+  <summary><strong>Cloud Pratitioner </strong></summary>
  <ul>
     <details>
         <summary><strong>Simulados</strong></summary>
@@ -223,7 +218,10 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
 </details>
 
 
-<h2>Projetos</h2>
+<h2>  Projetos 
+
+></h2>
+
 <p><ul>
   <a href="https://github.com/gersg/RecruitPA">
     <strong>RecruitPA</strong></a> - Projeto Recruit, plataforma de  conexao para gestores, recrutadores, empresas e profissionais em busca de recolocação ou iniciar sua vida profissional. utilizando tecnologia, preparo, educacao e encaminhamento dos melhores perfis para as demandas ofertadas. contando com uma equipe de psicologos, recrutadores, unindo testes, entrevistas, e um espaco para treinamentos, lives, imersoes alem de diversos videos gratuitos. criamos nosso banco de talentos sempre afunilando as hards skills e conectando os profissionais ás empresas que mais da se encaixa em fit cultural.
