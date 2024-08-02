@@ -21,7 +21,7 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
 
 </p>
 
-<h2>Cubos Academy - Desenvolimento de Software -  <img src="https://img.shields.io/badge/estudando-%" alt="Estudando" /></h2>
+<h2>Cubos Academy - Desenvolimento de Software -  <img src="https://img.shields.io/badge/Studying-%" alt="Studying" /></h2>
 <details>
   <summary><strong>Modulo 01</strong></summary>
  <ul>
@@ -177,7 +177,7 @@ Convido você a explorar meu trabalho e a se conectar comigo para discutirmos co
     </details></ul>
 </details>
 
-<h2>Escola da Nuvem/ AWS -  <img src="https://img.shields.io/badge/estudando-%" alt="Estudando" /></h2>
+<h2>Escola da Nuvem/ AWS -  <img src="https://img.shields.io/badge/Studying-%" alt="Studying" /></h2>
 <details>
   <summary><strong>Cloud Pratitioner </strong></summary>
  <ul>
