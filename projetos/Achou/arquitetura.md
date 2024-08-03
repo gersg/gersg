@@ -1,5 +1,7 @@
 
-# 📈 **Arquitetura da Plataforma Achou!**
+# 📈 **Arquitetura da Plataforma**
+
+**Achou!** é a plataforma que conecta empresas e profissionais de forma eficiente e segura. Com uma arquitetura bem definida e um roteiro de desenvolvimento claro, estamos prontos para entregar uma solução de qualidade para nossos usuários. 🚀
 
 ---
 
@@ -223,21 +225,6 @@ O **Git Flow** será adotado para garantir um fluxo de trabalho organizado e efi
 
 ---
 
-**Achou!** é a plataforma que conecta empresas e profissionais de forma eficiente e segura. Com uma arquitetura bem definida e um roteiro de desenvolvimento claro, estamos prontos para entregar uma solução de qualidade para nossos usuários. 🚀
-
----
-# Achou!
-
-Bem-vindo ao projeto **Achou!** - a plataforma que conecta empresas e profissionais com eficiência. A seguir, apresentamos a estrutura do projeto para facilitar a navegação e o entendimento.
-
----
-
-# Achou!
-
-Achou! é uma plataforma inovadora que conecta empresas com profissionais qualificados para mão de obra temporária e por diária. Abaixo está a estrutura do projeto e um guia de como contribuir e desenvolver a plataforma.
-
----
-
 ## 📁 Estrutura do Projeto
 
 | Pasta       | Descrição                                                                                     | Arquivos/ Diretórios                             |
@@ -258,7 +245,117 @@ Achou! é uma plataforma inovadora que conecta empresas com profissionais qualif
 | `templates/`      | Arquivos HTML para as páginas da web.                                                        | `empresa/`, `profissional/`                   |
 | `static/`         | Arquivos estáticos como CSS e JavaScript.                                                    | `css/`, `js/`                                 |
 
+
 ---
+
+### **Interações entre Componentes**
+
+- **Views ↔ Controllers**: A View faz solicitações aos Controladores, que processam essas solicitações e interagem com os Serviços.
+- **Controllers ↔ Services**: Os Controladores invocam os Serviços para processar a lógica de negócios e obter ou manipular dados.
+- **Services ↔ Models**: Os Serviços utilizam os Modelos para acessar e manipular dados. 
+- **Models ↔ Repositories**: Os Modelos solicitam aos Repositórios a persistência e recuperação de dados no banco de dados.
+- **Repositories ↔ Database**: Os Repositórios realizam operações CRUD no Banco de Dados.
+- **Services ↔ External Services**: Os Serviços podem se integrar com APIs e serviços externos para funcionalidades adicionais.
+- **Controllers ↔ Authentication and Authorization**: Os Controladores utilizam o sistema de Autenticação e Autorização para verificar permissões e gerenciar o acesso dos usuários.
+- **Controllers ↔ Notifications**: Os Controladores solicitam o envio de notificações através do sistema de Notificações.
+
+---
+
+### **Arquitetura MVC Simplificada**
+
+| **Camada**        | **Componente**            | **Descrição**                                                                 | **Responsabilidades**                                                                                       |
+|-------------------|---------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Model**         | **Models**                | **Modelos**: Representam e manipulam os dados da aplicação.                    | Definem a estrutura dos dados e interagem com o banco de dados. (ex. `Company`, `Professional`).           |
+| **View**          | **Views**                 | **Views**: Interfaces e templates de usuário.                                  | Exibem dados e formulários para interação com o usuário (ex. páginas de cadastro e busca).                  |
+| **Controller**    | **Controllers**           | **Controllers**: Coordenam a interação entre a View e o Model.                  | Processam as solicitações do usuário, interagem com os Models e atualizam as Views (ex. `CompanyController`).|
+
+
+``
+achou/
+│
+├── models/
+│   ├── company.js
+│   ├── professional.js
+│   └── ... (outros modelos)
+│
+├── views/
+│   ├── company/
+│   │   ├── list.ejs
+│   │   ├── details.ejs
+│   │   └── ... (outras views de empresa)
+│   ├── professional/
+│   │   ├── list.ejs
+│   │   ├── details.ejs
+│   │   └── ... (outras views de profissional)
+│   └── ... (outras views)
+│
+├── controllers/
+│   ├── companyController.js
+│   ├── professionalController.js
+│   └── ... (outros controladores)
+│
+├── routes/
+│   ├── companyRoutes.js
+│   ├── professionalRoutes.js
+│   └── ... (outras rotas)
+│
+├── config/
+│   └── db.js                # Configuração do banco de dados
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── app.js                   # Ponto de entrada da aplicação
+└── package.json             # Gerenciador de pacotes e dependências
+
+
+### **Descrição dos Componentes**
+
+1. **Models**
+   - **Responsabilidade**: Representar e manipular dados.
+   - **Localização**: `models/`
+   - **Exemplo**: `company.js` define o esquema e métodos para a entidade Empresa.
+
+2. **Views**
+   - **Responsabilidade**: Exibir dados e formulários para interação com o usuário.
+   - **Localização**: `views/`
+   - **Exemplo**: `list.ejs` para listar empresas.
+
+3. **Controllers**
+   - **Responsabilidade**: Coordenar a interação entre a View e o Model.
+   - **Localização**: `controllers/`
+   - **Exemplo**: `companyController.js` lida com a lógica para exibir e manipular empresas.
+
+4. **Routes**
+   - **Responsabilidade**: Definir as rotas da aplicação e associá-las aos Controladores.
+   - **Localização**: `routes/`
+   - **Exemplo**: `companyRoutes.js` define rotas para operações relacionadas a empresas.
+
+5. **Config**
+   - **Responsabilidade**: Configurar a aplicação, como conexão com o banco de dados.
+   - **Localização**: `config/`
+   - **Exemplo**: `db.js` configura a conexão com o banco de dados.
+
+6. **Public**
+   - **Responsabilidade**: Arquivos estáticos como CSS, JS e imagens.
+   - **Localização**: `public/`
+   - **Exemplo**: `css/styles.css` para estilos da aplicação.
+
+7. **App.js**
+   - **Responsabilidade**: Ponto de entrada da aplicação que configura o servidor e as rotas.
+   - **Localização**: Raiz do projeto.
+
+### **Fluxo de Dados**
+
+1. **Usuário** acessa uma página da aplicação.
+2. **View** exibe o formulário ou página solicitada.
+3. **Controller** recebe a solicitação do usuário e interage com o **Model** para obter ou manipular dados.
+4. **Model** executa a lógica de acesso a dados e retorna informações ao **Controller**.
+5. **Controller** atualiza a **View** com os dados processados.
+
+
 
 
 
