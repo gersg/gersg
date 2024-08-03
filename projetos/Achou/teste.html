@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura da Plataforma Achou!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        h1 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        pre {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arquitetura da Plataforma Achou!</h1>
+
+        <h2>Arquitetura MVC Avançada</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Camada</th>
+                    <th>Componente</th>
+                    <th>Descrição</th>
+                    <th>Responsabilidades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Model</td>
+                    <td>Models</td>
+                    <td>Modelos: Representam e manipulam os dados da aplicação.</td>
+                    <td>Definem a estrutura dos dados e interagem com o banco de dados. (ex. <code>Company</code>, <code>Professional</code>)</td>
+                </tr>
+                <tr>
+                    <td>View</td>
+                    <td>Views</td>
+                    <td>Interfaces e templates de usuário.</td>
+                    <td>Exibem dados e formulários para interação com o usuário (ex. páginas de cadastro e busca).</td>
+                </tr>
+                <tr>
+                    <td>Controller</td>
+                    <td>Controllers</td>
+                    <td>Controladores: Coordenam a interação entre a View e o Model.</td>
+                    <td>Processam as solicitações do usuário, interagem com os Models e atualizam as Views (ex. <code>CompanyController</code>).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Estrutura de Projeto</h2>
+        <pre>
+<code>
+achou/
+│
+├── models/
+│   ├── company.js
+│   ├── professional.js
+│   └── ... (outros modelos)
+│
+├── views/
+│   ├── company/
+│   │   ├── list.ejs
+│   │   ├── details.ejs
+│   │   └── ... (outras views de empresa)
+│   ├── professional/
+│   │   ├── list.ejs
+│   │   ├── details.ejs
+│   │   └── ... (outras views de profissional)
+│   └── ... (outras views)
+│
+├── controllers/
+│   ├── companyController.js
+│   ├── professionalController.js
+│   └── ... (outros controladores)
+│
+├── routes/
+│   ├── companyRoutes.js
+│   ├── professionalRoutes.js
+│   └── ... (outras rotas)
+│
+├── config/
+│   └── db.js                # Configuração do banco de dados
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── app.js                   # Ponto de entrada da aplicação
+└── package.json             # Gerenciador de pacotes e dependências
+</code>
+        </pre>
+
+        <h2>Descrição dos Componentes</h2>
+        <ul>
+            <li><strong>Models</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Representar e manipular dados.</li>
+                    <li><strong>Localização:</strong> <code>models/</code></li>
+                    <li><strong>Exemplo:</strong> <code>company.js</code> define o esquema e métodos para a entidade Empresa.</li>
+                </ul>
+            </li>
+            <li><strong>Views</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Exibir dados e formulários para interação com o usuário.</li>
+                    <li><strong>Localização:</strong> <code>views/</code></li>
+                    <li><strong>Exemplo:</strong> <code>list.ejs</code> para listar empresas.</li>
+                </ul>
+            </li>
+            <li><strong>Controllers</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Coordenar a interação entre a View e o Model.</li>
+                    <li><strong>Localização:</strong> <code>controllers/</code></li>
+                    <li><strong>Exemplo:</strong> <code>companyController.js</code> lida com a lógica para exibir e manipular empresas.</li>
+                </ul>
+            </li>
+            <li><strong>Routes</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Definir as rotas da aplicação e associá-las aos Controladores.</li>
+                    <li><strong>Localização:</strong> <code>routes/</code></li>
+                    <li><strong>Exemplo:</strong> <code>companyRoutes.js</code> define rotas para operações relacionadas a empresas.</li>
+                </ul>
+            </li>
+            <li><strong>Config</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Configurar a aplicação, como conexão com o banco de dados.</li>
+                    <li><strong>Localização:</strong> <code>config/</code></li>
+                    <li><strong>Exemplo:</strong> <code>db.js</code> configura a conexão com o banco de dados.</li>
+                </ul>
+            </li>
+            <li><strong>Public</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Arquivos estáticos como CSS, JS e imagens.</li>
+                    <li><strong>Localização:</strong> <code>public/</code></li>
+                    <li><strong>Exemplo:</strong> <code>css/styles.css</code> para estilos da aplicação.</li>
+                </ul>
+            </li>
+            <li><strong>App.js</strong>
+                <ul>
+                    <li><strong>Responsabilidade:</strong> Ponto de entrada da aplicação que configura o servidor e as rotas.</li>
+                    <li><strong>Localização:</strong> Raiz do projeto.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Fluxo de Dados</h2>
+        <ol>
+            <li><strong>Usuário:</strong> Acessa uma página da aplicação.</li>
+            <li><strong>View:</strong> Exibe o formulário ou página solicitada.</li>
+            <li><strong>Controller:</strong> Recebe a solicitação do usuário e interage com o Model para obter ou manipular dados.</li>
+            <li><strong>Model:</strong> Executa a lógica de acesso a dados e retorna informações ao Controller.</li>
+            <li><strong>Controller:</strong> Atualiza a View com os dados processados.</li>
+        </ol>
+    </div>
+</body>
+</html>
+```

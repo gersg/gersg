@@ -4,13 +4,13 @@
 <h3 align="middle">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
  
  <p align="middle">
-    <a  href="https://www.linkedin.com/in/gersg/"> </a> 
-    <img align="e" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+    <a align="middle" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
+    
  </p> 
 
 </p>
 <br>
-<h2>Sobre Mim </h2>
+<h2>Sobre Mim</h2>
     <p>
       Sou um desenvolvedor apaixonado por tecnologia, e Convido você a explorar meu trabalho e a se conectar comigo para discutirmos como podemos colaborar e crescer juntos.
 

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Backlog - Achou!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: #fff 4px solid;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .epic {
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+        }
+        .criteria {
+            margin-left: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            main {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Backlog - Achou!</h1>
+    </header>
+    <main>
+        <section id="product-vision">
+            <h2>Visão do Produto</h2>
+            <p>A Achou! é a plataforma que conecta empresas a profissionais temporários e por diária, com uma rigorosa triagem de currículos, análises comportamentais e psicométricas, e entrevistas. O objetivo é fornecer um banco de dados confiável e eficiente para atender às demandas de contratação rápida e de qualidade.</p>
+        </section>
+
+        <section id="epics-user-stories">
+            <h2>Epics e User Stories</h2>
+
+            <div class="epic">
+                <h3>1. Gestão de Perfis de Empresas</h3>
+                <ul>
+                    <li><strong>1.1 Cadastro de Empresa</strong></li>
+                    <ul class="criteria">
+                        <li>US01: Como uma empresa, quero me cadastrar na plataforma, fornecendo informações básicas e de contato, para acessar serviços.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Deve incluir campos para nome, CNPJ, endereço, e-mail e telefone.</li>
+                        <li>Envio de e-mail de confirmação após cadastro.</li>
+                    </ul>
+
+                    <li><strong>1.2 Gerenciamento de Perfil de Empresa</strong></li>
+                    <ul class="criteria">
+                        <li>US02: Como uma empresa, quero editar meu perfil, para atualizar minhas informações de contato e preferências.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Permitir edição de informações básicas.</li>
+                        <li>Opção para alterar senha e e-mail.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="epic">
+                <h3>2. Gestão de Perfis de Profissionais</h3>
+                <ul>
+                    <li><strong>2.1 Cadastro de Profissional</strong></li>
+                    <ul class="criteria">
+                        <li>US03: Como um profissional, quero me cadastrar na plataforma, fornecendo informações pessoais e de experiência, para ser considerado para vagas.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Campos obrigatórios: nome, CPF, e-mail, telefone, habilidades.</li>
+                        <li>Upload de currículo em PDF.</li>
+                    </ul>
+
+                    <li><strong>2.2 Processo de Seleção</strong></li>
+                    <ul class="criteria">
+                        <li>US04: Como administrador, quero realizar triagens de currículos, para selecionar candidatos qualificados.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Visualização de currículos enviados.</li>
+                        <li>Sistema de notas para avaliação de currículos.</li>
+                    </ul>
+
+                    <li><strong>2.3 Análise Comportamental e Psicométrica</strong></li>
+                    <ul class="criteria">
+                        <li>US05: Como administrador, quero aplicar testes comportamentais e psicométricos, para avaliar o perfil dos candidatos.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Sistema de envio de testes para candidatos.</li>
+                        <li>Armazenamento de resultados de testes.</li>
+                    </ul>
+
+                    <li><strong>2.4 Entrevistas</strong></li>
+                    <ul class="criteria">
+                        <li>US06: Como administrador, quero agendar e realizar entrevistas, para avaliar os candidatos de forma mais detalhada.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Ferramenta de agendamento de entrevistas.</li>
+                        <li>Sistema de avaliação pós-entrevista.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="epic">
+                <h3>3. Busca e Correspondência de Vagas</h3>
+                <ul>
+                    <li><strong>3.1 Busca por Profissionais</strong></li>
+                    <ul class="criteria">
+                        <li>US07: Como uma empresa, quero buscar profissionais por habilidades e disponibilidade, para encontrar candidatos ideais para minhas vagas.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Filtros de busca por habilidades, localização, e disponibilidade.</li>
+                        <li>Exibição de lista de profissionais correspondentes.</li>
+                    </ul>
+
+                    <li><strong>3.2 Sugestões de Profissionais</strong></li>
+                    <ul class="criteria">
+                        <li>US08: Como uma empresa, quero receber sugestões de profissionais, para facilitar o processo de contratação.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Algoritmo de correspondência baseado em habilidades e avaliação.</li>
+                        <li>Notificações de sugestões de candidatos.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="epic">
+                <h3>4. Comunicação e Notificações</h3>
+                <ul>
+                    <li><strong>4.1 Sistema de Notificações</strong></li>
+                    <ul class="criteria">
+                        <li>US09: Como usuário, quero receber notificações de atualizações e mensagens importantes, para estar sempre informado sobre o status do processo.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Notificações por e-mail e dentro da plataforma.</li>
+                        <li>Personalização de preferências de notificação.</li>
+                    </ul>
+
+                    <li><strong>4.2 Mensagens e Chat</strong></li>
+                    <ul class="criteria">
+                        <li>US10: Como empresa, quero poder enviar mensagens para candidatos, para comunicar informações importantes sobre o processo de seleção.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Sistema de chat integrado na plataforma.</li>
+                        <li>Histórico de mensagens acessível.</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="epic">
+                <h3>5. Relatórios e Análises</h3>
+                <ul>
+                    <li><strong>5.1 Relatórios de Desempenho</strong></li>
+                    <ul class="criteria">
+                        <li>US11: Como administrador, quero gerar relatórios de desempenho dos candidatos, para analisar o sucesso das contratações.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Relatórios detalhados de métricas de seleção e desempenho.</li>
+                        <li>Opção para exportar relatórios em PDF.</li>
+                    </ul>
+
+                    <li><strong>5.2 Análises de Eficiência</strong></li>
+                    <ul class="criteria">
+                        <li>US12: Como administrador, quero analisar a eficiência do processo de seleção, para melhorar continuamente a plataforma.</li>
+                        <li><strong>Critérios de Aceitação:</strong></li>
+                        <li>Dashboard com KPIs chave.</li>
+                        <li>Análise de tempo médio de contratação e satisfação das empresas.</li
+
+>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Responsividade simples para melhorar a experiência em dispositivos móveis
+        function adjustLayout() {
+            const sections = document.querySelectorAll('section');
+            if (window.innerWidth < 768) {
+                sections.forEach(section => {
+                    section.style.padding = '10px';
+                });
+            } else {
+                sections.forEach(section => {
+                    section.style.padding = '20px';
+                });
+            }
+        }
+
+        // Ajustar layout na carga da página e sempre que a janela for redimensionada
+        window.addEventListener('load', adjustLayout);
+        window.addEventListener('resize', adjustLayout);
+    </script>
+</body>
+</html>
+```

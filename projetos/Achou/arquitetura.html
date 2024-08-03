@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Plataforma Achou!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 10px;
+            min-height: 70px;
+            border-bottom: #ddd 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 0 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #333;
+            color: #fff;
+        }
+        td {
+            background: #f9f9f9;
+        }
+        .note {
+            background: #e7f0f9;
+            border-left: 4px solid #1e90ff;
+            padding: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📈 Arquitetura da Plataforma Achou!</h1>
+            <nav>
+                <a href="#mvc">Padrão MVC</a>
+                <a href="#gitflow">Git Flow</a>
+                <a href="#sprints">Sprints e Atividades</a>
+                <a href="#tecnologias">Detalhes Técnicos e Ferramentas</a>
+                <a href="#estrutura">Estrutura do Projeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="mvc">
+            <h2>🛠 Padrão MVC (Model-View-Controller)</h2>
+            <p>A arquitetura <strong>MVC</strong> é crucial para organizar nossa aplicação, permitindo um desenvolvimento escalável e manutenção simplificada. Vamos explorar cada componente:</p>
+            <h3>Model</h3>
+            <ul>
+                <li><strong>Função:</strong> Gerenciar dados, lógica de negócios e regras de acesso.</li>
+                <li><strong>Componentes:</strong>
+                    <ul>
+                        <li><strong>Banco de Dados:</strong> Estrutura de tabelas e relacionamentos.</li>
+                        <li><strong>Entidades:</strong> Representações dos dados (<code>Empresa</code>, <code>Profissional</code>, <code>Vaga</code>).</li>
+                        <li><strong>Repositórios:</strong> Acesso a dados, operações CRUD.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>View</h3>
+            <ul>
+                <li><strong>Função:</strong> Apresentação dos dados e interação com o usuário.</li>
+                <li><strong>Componentes:</strong>
+                    <ul>
+                        <li><strong>Front-end:</strong> Páginas e componentes (HTML, CSS, JavaScript, frameworks como React/Vue).</li>
+                        <li><strong>Templates:</strong> Renderização dinâmica de dados.</li>
+                        <li><strong>UI/UX:</strong> Design e experiência do usuário.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Controller</h3>
+            <ul>
+                <li><strong>Função:</strong> Intermediação entre Model e View, controle do fluxo da aplicação.</li>
+                <li><strong>Componentes:</strong>
+                    <ul>
+                        <li><strong>Controladores:</strong> Lidam com requisições HTTP, chamam métodos do Model e definem a View.</li>
+                        <li><strong>Roteadores:</strong> Mapeamento de URLs para ações dos controladores.</li>
+                        <li><strong>Serviços:</strong> Lógica de negócios complementar.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="gitflow">
+            <h2>🌿 Fluxo de Trabalho com Git Flow</h2>
+            <p>O <strong>Git Flow</strong> será adotado para garantir um fluxo de trabalho organizado e eficaz. As principais branches e suas funções são:</p>
+            <h3>Branches Principais</h3>
+            <ul>
+                <li><strong><code>main</code></strong>: Código de produção estável.</li>
+                <li><strong><code>develop</code></strong>: Desenvolvimento ativo de novas funcionalidades.</li>
+            </ul>
+            <h3>Branches de Suporte</h3>
+            <ul>
+                <li><strong>Feature Branches</strong> (<code>feature/nome-da-funcionalidade</code>): Novas funcionalidades, originadas de <code>develop</code>.</li>
+                <li><strong>Release Branches</strong> (<code>release/versão</code>): Preparação para produção, originadas de <code>develop</code>.</li>
+                <li><strong>Hotfix Branches</strong> (<code>hotfix/nome-do-fix</code>): Correções urgentes em produção, originadas de <code>main</code>.</li>
+            </ul>
+        </section>
+
+        <section id="sprints">
+            <h2>📝 Sprints e Atividades - Projeto Achou!</h2>
+
+            <h3>Sprint 1 (Semana 1-2)</h3>
+            <p><strong>Objetivo:</strong> Estabelecer a base para o cadastro de empresas e profissionais, além de iniciar o processo de triagem de currículos.</p>
+
+            <div class="note">
+                <strong>Cadastro de Empresa (US01)</strong>
+                <ul>
+                    <li><strong>Desenvolvimento:</strong> Implementar formulário de cadastro, Validação de dados, Envio de e-mail de confirmação.</li>
+                    <li><strong>Teste:</strong> Verificar a validação de campos obrigatórios, Confirmar o envio de e-mail, Integrar com a base de dados.</li>
+                    <li><strong>Implementação:</strong> Deploy da funcionalidade de cadastro, Painel de administração para gerenciamento de empresas.</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <strong>Cadastro de Profissional (US03)</strong>
+                <ul>
+                    <li><strong>Desenvolvimento:</strong> Criar formulário de cadastro com campos para informações pessoais, Implementar upload de currículo.</li>
+                    <li><strong>Teste:</strong> Testar upload de arquivos e validação de formatos permitidos, Garantir armazenamento seguro.</li>
+                    <li><strong>Implementação:</strong> Deploy do sistema de cadastro de profissionais com painel de gerenciamento.</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <strong>Processo de Seleção - Triagem de Currículos (US04)</strong>
+                <ul>
+                    <li><strong>Desenvolvimento:</strong> Criar interface para visualização e avaliação de currículos.</li>
+                    <li><strong>Teste:</strong> Garantir a correta exibição de currículos, Validar funcionalidade de avaliação.</li>
+                    <li><strong>Implementação:</strong> Deploy da interface de triagem e sistema de notas.</li>
+                </ul>
+            </div>
+
+            <h3>Sprint 2 (Semana 3-4)</h3>
+            <p><strong>Objetivo:</strong> Completar as análises comportamentais e psicométricas, além de iniciar a busca por profissionais.</p>
+
+            <div class="note">
+                <strong>Análise Comportamental e Psicométrica (US05)</strong>
+                <ul>
+                    <li><strong>Desenvolvimento:</strong> Implementar envio de testes, Armazenamento e análise de resultados.</li>
+                    <li><strong>Teste:</strong> Validar envio e recebimento de testes, Confirmar armazenamento seguro.</li>
+                    <li><strong>Implementação:</strong> Deploy do módulo de análises e integração com perfil de candidatos.</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <strong>Busca de Profissionais (US06)</strong>
+                <ul>
+                    <li><strong>Desenvolvimento:</strong> Criar funcionalidade de busca e filtragem de profissionais, Implementar painel para visualização.</li>
+                    <li><strong>Teste:</strong> Garantir precisão nos filtros de busca, Validar funcionalidade do painel.</li>
+                    <li><strong>Implementação:</strong> Deploy da funcionalidade de busca e painel de profissionais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tecnologias">
+            <h2>🔧 Detalhes Técnicos e Ferramentas</h2>
+            <p><strong>Backend:</strong> Node.js, Express.js</p>
+            <p><strong>Frontend:</strong> React.js, Redux</p>
+            <p><strong>Banco de Dados:</strong> MongoDB, Mongoose</p>
+            <p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins</p>
+            <p><strong>Controle de Versão:</strong> Git, GitHub</p>
+            <p><strong>Testes:</strong> Jest, Mocha</p>
+            <p><strong>Documentação:</strong> Swagger, JSDoc</p>
+        </section>
+
+        <section id="estrutura">
+            <h2>📂 Estrutura do Projeto</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Diretório</th>
+                        <th>Descrição</th>
+                        <th>Subdiretórios/Arquivos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>src/</code></td>
+                        <td>Código-fonte da aplicação, dividido em componentes.</td>
+                        <td><code>controllers/</code>, <code>models/</code>, <code>views/</code>, <code>routes/</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>public/</code></td>
+                        <td>Contém arquivos estáticos como CSS, JavaScript e imagens.</td>
+                        <td><code>css/</code>, <code>js/</code>, <code>images/</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>config/</code></td>
+                        <td>Arquivos de configuração do projeto.</td>
+                        <td><code>database.js</code>, <code>auth.js</code>, <code>server.js</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>tests/</code></td>
+                        <td>Testes automatizados e scripts de testes.</td>
+                        <td><code>unit/</code>, <code>integration/</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>docs/</code></td>
+                        <td>Documentação técnica e guias de usuário.</td>
+                        <td><code>README.md</code>, <code>CONTRIBUTING.md</code>, <code>CHANGELOG.md</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>scripts/</code></td>
+                        <td>Scripts auxiliares e tarefas automatizadas.</td>
+                        <td><code>setup.sh</code>, <code>deploy.sh</code>, <code>backup.sh</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+
