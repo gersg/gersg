@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit - Conectando Talentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a90e2, #50e3c2);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #4a90e2;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .features, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features {
+            background-color: #f0f0f0;
+        }
+
+        .features h2, .contact h2 {
+            margin: 0 0 20px;
+            font-size: 2em;
+        }
+
+        .features-grid, .contact-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #50e3c2;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo ao Recruit!</h1>
+            <p>Conectamos gestores, recrutadores e profissionais para uma recolocação bem-sucedida e novas oportunidades.</p>
+            <a href="#contact" class="cta-button">Saiba Mais</a>
+        </div>
+    </header>
+    <section class="features">
+        <div class="container">
+            <h2>Nossos Destaques</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Conexão Eficiente</h3>
+                    <p>Unimos gestores, recrutadores e profissionais com o melhor fit cultural e habilidades técnicas.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Equipe Especializada</h3>
+                    <p>Contamos com psicólogos e recrutadores para garantir a melhor avaliação e direcionamento dos perfis.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Treinamentos e Recursos</h3>
+                    <p>Acesse treinamentos, lives, imersões e uma vasta biblioteca de vídeos gratuitos para aprimorar suas habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Recruit. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Obrigado por sua mensagem! Entraremos em contato em breve.');
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+</body>
+</html>
