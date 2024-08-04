@@ -52,5 +52,3 @@ Desenvolver uma identidade visual e uma plataforma web para os Grupos de Apoio e
 O desenvolvimento dessa plataforma web e identidade visual visa proporcionar uma experiência acolhedora e profissional para os membros dos grupos, além de promover os serviços e aumentar a geração de leads.
 
 ---
-
-**Nota:** Essa descrição deve ser utilizada como base para o desenvolvimento da identidade visual e funcionalidades da plataforma web. Ajustes podem ser feitos conforme necessário, em colaboração com a equipe de P.O, UX e UI.
