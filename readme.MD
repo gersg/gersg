@@ -230,7 +230,7 @@
   <br />
 
   <a href="https://github.com/gersg/Cocria">
-    <strong> Cocria </strong></a> - Bem-vindo à Cocria, onde revolucionamos a forma como artistas, produtores independentes, bandas e outros talentos têm acesso a oportunidades de fomento e produção. Nossa missão é democratizar o acesso a editais e recursos essenciais para fomentar a cultura, o meio ambiente, o esporte e todas as formas de expressão artística.
+    <strong> Cocria </strong></a> - A Cocria é uma plataforma digital inovadora que surge com a missão de conectar produtores culturais, empresas e órgãos governamentais a oportunidades de financiamento e apoio para projetos de impacto social, cultural e ambiental. Nossa plataforma foi projetada para democratizar o acesso a informações e recursos essenciais, criando um ambiente colaborativo e inclusivo que impulsiona o desenvolvimento de projetos significativos e transformadores.
  
  <br />
 
