@@ -1,4 +1,4 @@
-<img align="top-left" matrix src="https://github.com/gersg.png?size=150"> 
+<img align="middle" matrix src="https://github.com/gersg.png?size=200"> 
 <h3 align="top-middle">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
 <h1 align="middle"> Gerson Espindola </h1>
  
