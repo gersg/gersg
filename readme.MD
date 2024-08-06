@@ -5,9 +5,9 @@
  <p align="middle">
     <a align="middle" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
     <br >
-    <a align="middle" href="https://github.com/gersg"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"> </a>
+    <a align="right" href="https://github.com/gersg"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"> </a>
     <br >
-    <a align="middle" href="https://twitter.com/gersg"> <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"> </a>
+    <a align="left" href="https://twitter.com/gersg"> <img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white"> </a>
 
 </p>
 <br>
