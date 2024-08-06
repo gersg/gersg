@@ -233,39 +233,6 @@
   </ul>
 </details>
 
-![Amazon EC2](https://img.shields.io/badge/icon-Amazon_EC2?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon S3](https://img.shields.io/badge/icon-Amazon_S3?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon RDS](https://img.shields.io/badge/icon-Amazon_RDS?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon DynamoDB](https://img.shields.io/badge/icon-Amazon_DynamoDB?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon Lambda](https://img.shields.io/badge/icon-Amazon_Lambda?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon CloudFront](https://img.shields.io/badge/icon-Amazon_CloudFront?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon SNS](https://img.shields.io/badge/icon-Amazon_SNS?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon SQS](https://img.shields.io/badge/icon-Amazon_SQS?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon EKS](https://img.shields.io/badge/icon-Amazon_EKS?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon ECS](https://img.shields.io/badge/icon-Amazon_ECS?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon IAM](https://img.shields.io/badge/icon-Amazon_IAM?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS CloudFormation](https://img.shields.io/badge/icon-AWS_CloudFormation?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS CodePipeline](https://img.shields.io/badge/icon-AWS_CodePipeline?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS CodeBuild](https://img.shields.io/badge/icon-AWS_CodeBuild?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS CodeDeploy](https://img.shields.io/badge/icon-AWS_CodeDeploy?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Glue](https://img.shields.io/badge/icon-AWS_Glue?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Elastic Beanstalk](https://img.shields.io/badge/icon-AWS_Elastic_Beanstalk?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Lambda@Edge](https://img.shields.io/badge/icon-AWS_Lambda@Edge?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Step Functions](https://img.shields.io/badge/icon-AWS_Step_Functions?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Kinesis](https://img.shields.io/badge/icon-AWS_Kinesis?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS CloudWatch](https://img.shields.io/badge/icon-AWS_CloudWatch?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS X-Ray](https://img.shields.io/badge/icon-AWS_X--Ray?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon Redshift](https://img.shields.io/badge/icon-Amazon_Redshift?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Elasticache](https://img.shields.io/badge/icon-AWS_Elasticache?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Secrets Manager](https://img.shields.io/badge/icon-AWS_Secrets_Manager?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Systems Manager](https://img.shields.io/badge/icon-AWS_Systems_Manager?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS AppSync](https://img.shields.io/badge/icon-AWS_AppSync?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Amplify](https://img.shields.io/badge/icon-AWS_Amplify?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![AWS Cognito](https://img.shields.io/badge/icon-AWS_Cognito?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-![Amazon Athena](https://img.shields.io/badge/icon-Amazon_Athena?style=flat&logo=amazonaws&logoColor=white&color=232F3E)
-
-
-
 
 
 <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; border-top: 1px solid #ddd;"> 
