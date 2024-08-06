@@ -193,53 +193,8 @@
 </details>
 <details>
   <summary>Academicos</summary>
-  <ul>
-    <li>
-      <a href="https://github.com/gersg/RecruitPA">
-        <strong>RecruitPA</strong>
-      </a>
-      <p>Projeto de pratica academica</p>
-    </li>
-<br>
-    <li>
-      <a href="https://github.com/gersg/Ancestral">
-        <strong>Instituto Ancestral</strong>
-      </a>
-      <p>Projeto de treino academico.</p>
-    </li>
-<br>
-    <li>
-      <a href="https://github.com/gersg/Cocria">
-        <strong>Cocria</strong>
-      </a>
-      <p>CProjeto de psicólogos</p>
-    </li>
-<br>
-    <li>
-      <a href="https://github.com/gersg/Achou">
-        <strong>Achou!</strong>
-      </a>
-      <p>desenvolver api rest para psicólogos agendamento</p>
-    </li>
-<br>
-    <li>
-      <a href="https://github.com/gersg/Acolher">
-        <strong>praticando POO</strong>
-      </a>
-      <p>CProjeto academico</p>
-    </li>
-<br>
-    <li>
-      <a href="https://github.com/gersg">
-        <strong>Calculadora</strong>
-      </a>
-      <p>Criar e desenvolver uma calculadora de tempo de atendimento para psicólogos.</p>
-    </li>
-  </ul>
+  
 </details>
-
-
-
 
 
 <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; border-top: 1px solid #ddd;"> 
