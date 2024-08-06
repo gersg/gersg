@@ -1,6 +1,6 @@
 <p align="middle"><img align="center" matrix src="https://github.com/gersg.png?size=200"></p > 
-<h3 align="top-middle">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
-<h1 align="middle"> Gerson Luiz Espindola Gondim </h1>
+<h3 align="middle">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
+<h1 align="left "> Gerson Luiz Espindola Gondim </h1>
     <a align="left" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
     <br >
 </p>
