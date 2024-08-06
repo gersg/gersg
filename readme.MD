@@ -1,7 +1,115 @@
-<img align="left" matrix src="https://github.com/gersg.png?size=150"> 
-<h1 align="middle"> Olá, eu sou o Gerson Espindola </h1>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: #333; /* Cor de texto */
+        background-color: #F5F5F5; /* Cor de fundo clara */
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #003366; /* Azul profundo */
+        color: #FFF;
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .social-icons a {
+        margin: 0 10px;
+        color: #FFF;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        color: #FF6F00; /* Laranja vibrante */
+    }
+    .section {
+        background: #FFF; /* Fundo branco */
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #FF6F00; /* Laranja vibrante */
+        border-bottom: 2px solid #FF6F00;
+        padding-bottom: 10px;
+    }
+    .tree {
+        margin: 20px 0;
+    }
+    .tree ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    .tree li {
+        margin: 5px 0;
+    }
+    .skills, .certifications, .badges, .projects, .education, .about-me, .stats {
+        margin-bottom: 20px;
+    }
+    .skills .badge, .certifications .badge, .badges .badge {
+        display: inline-block;
+        padding: 5px 10px;
+        background: #4CAF50; /* Verde vibrante */
+        color: #FFF;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 5px;
+    }
+    .education a {
+        color: #003366; /* Azul profundo */
+        text-decoration: none;
+    }
+    .education a:hover {
+        text-decoration: underline;
+    }
+    .about-me {
+        background-color: #E0F2F1; /* Verde muito claro */
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .profile-img {
+        float: left;
+        margin-right: 20px;
+    }
+    .profile-header h1, .profile-header h3 {
+        text-align: center;
+    }
+    .profile-header p {
+        text-align: center;
+    }
+    .profile-header a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .stats {
+        background-color: #E0F2F1; /* Verde muito claro */
+        padding: 20px;
+        border-radius: 8px;
+    }
+    a {
+        color: #003366; /* Azul profundo */
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 
-<h3 align="middle">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
+
+<img align="left" matrix src="https://github.com/gersg.png?size=150"> 
+
+<h1 align="middle"> Gerson Espindola </h1>
+
+<h3 align="middle">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
  
  <p align="middle">
     <a align="middle" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
@@ -12,252 +120,14 @@
 <br>
 <h2>Sobre Mim</h2>
     <p>
-      Sou um desenvolvedor apaixonado por tecnologia, e Convido você a explorar meu trabalho e a se conectar comigo para discutirmos como podemos colaborar e crescer juntos.
+     Sou um profissional com 38 anos de experiência, atualmente em uma fase de transição de carreira com foco em tecnologia e inovação. Minha jornada é marcada pela busca constante de excelência e pela vontade de impactar positivamente o mundo ao meu redor.
 
-</p>
-
-<h2><align="middle">Cubos Academy - Desenvolimento de Software </h2>
-<details>
-  <summary><strong>Modulo 01</strong></summary>
- <ul>
-    <details>
-        <summary><strong>Hard Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio Tecnico
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Soft Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio de carreira
-        </a></li>
-    </details></ul>
-</details>
-
-<details>
-  <summary><strong>Modulo 02</strong></summary>
- <ul>
-    <details>
-        <summary><strong>Hard Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio Tecnico
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Soft Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio de carreira
-        </a></li>
-    </details></ul>
-</details>
-
-<details>
-  <summary><strong>Modulo 03</strong></summary>
-  <ul>
-    <details>
-        <summary><strong>Hard Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio Tecnico
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Soft Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio de carreira
-        </a></li>
-    </details></ul>
-</details>
-
-<details>
-  <summary><strong>Modulo 04</strong></summary>
-  <ul>
-    <details>
-        <summary><strong>Hard Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio Tecnico
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Soft Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio de carreira
-        </a></li>
-    </details></ul>
-</details>
-
-<details>
-  <summary><strong>Modulo 05</strong></summary>
-    <ul>
-    <details>
-        <summary><strong>Hard Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio Tecnico
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Soft Skills</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Exercicios
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Desafio de carreira
-        </a></li>
-    </details></ul>
-</details>
-
-<h2>Escola da Nuvem/ AWS </h2>
-<details>g
-  <summary><strong>Cloud Pratitioner </strong></summary>
- <ul>
-    <details>
-        <summary><strong>Simulados</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Oficiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Extras
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Resumos
-        </a></li>
-    </details></ul>
-
- <ul>
-    <details>
-        <summary><strong>Conteudo</strong></summary>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materia
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Knowledge checks
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-        Laboratórios
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">
-            Materiais
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">
-            Material complementar
-        </a></li>
-        <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">
-            Resumos
-        </a></li>
-    </details></ul>
-</details>
-
-
-<h2>  Projetos 
-
-></h2>
-
-<p><ul>
-  <a href="https://github.com/gersg/RecruitPA">
-    <strong>RecruitPA</strong></a> - Projeto Recruit, plataforma de  conexao para gestores, recrutadores, empresas e profissionais em busca de recolocação ou iniciar sua vida profissional. utilizando tecnologia, preparo, educacao e encaminhamento dos melhores perfis para as demandas ofertadas. contando com uma equipe de psicologos, recrutadores, unindo testes, entrevistas, e um espaco para treinamentos, lives, imersoes alem de diversos videos gratuitos. criamos nosso banco de talentos sempre afunilando as hards skills e conectando os profissionais ás empresas que mais da se encaixa em fit cultural.
-  
-  <br />
-  
-  <a href="https://github.com/gersg/Ancestral">
-    <strong> Instituto Ancestral </strong> </a> - 
- Nosso propósito vai além de simplesmente preservar. Buscamos uma revitalização ativa das tradições culturais e ambientais, integrando práticas ancestrais com soluções contemporâneas para enfrentar os desafios atuais e moldar um futuro sustentável.
-
-  <br />
-
-  <a href="https://github.com/gersg/Cocria">
-    <strong> Cocria </strong></a> - A Cocria é uma plataforma digital inovadora que surge com a missão de conectar produtores culturais, empresas e órgãos governamentais a oportunidades de financiamento e apoio para projetos de impacto social, cultural e ambiental. Nossa plataforma foi projetada para democratizar o acesso a informações e recursos essenciais, criando um ambiente colaborativo e inclusivo que impulsiona o desenvolvimento de projetos significativos e transformadores.
- 
- <br />
-
-  <a href="https://github.com/gersg/Achou">  
-    <strong>Achou!</strong></a> - A Achou! é uma plataforma inovadora que simplifica o processo de encontrar e contratar profissionais temporários e por diária. Nossa missão é conectar empresas com os talentos certos de maneira eficiente e confiável.
-  
-  <br />
-
-  <a href="https://github.com/gersg/Acolher">  
-    <strong>Acolher</strong></a> - É uma startup dedicada ao atendimento psicológico e ao acolhimento de pessoas em busca de apoio emocional e saúde mental. Fundada por Kelen de Carvalho Espíndola, psicóloga clínica apaixonada pela arte de cuidar das pessoas, a Acolher tem como missão proporcionar um ambiente seguro e compassivo onde cada pessoa possa explorar suas emoções e desafios de vida.
-
-</p></ul>
-
-<h2>Estatísticas do GitHub</h2>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gersg&show_icons=true&hide_title=true&hide_border=true" alt="Estatísticas do GitHub" />
-</p>
-
-<h2>Atividades Recentes</h2>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gersg&hide_title=true&hide_border=true" alt="Streak" />
 </p>
 
 <h2>Tecnologias e Ferramentas</h2>
 <p align="center">
 
-"[docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)"
+
 ![aws](https://img.shields.io/badge/aws-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![linux](https://img.shields.io/badge/linux-%23121011.svg?style=for-the-badge&logo=linux&logoColor=white)
 ![SQL](https://img.shields.io/badge/sql-%2300f.svg?style=for-the-badge&logo=sql&logoColor=white)
@@ -275,3 +145,217 @@
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 </p>
+
+<h2><align="middle">Cubos Academy - Desenvolimento de Software </h2>
+
+<summary><strong>Exercícicos</strong></summary>
+    <ul>
+        <li>
+            <summary>Modulo 01</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/exercicios-backend-variaveis-v3">Variaveis</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-setup-ferramentas-v3">Setup de Ferramentas</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-arrays-loops-v3">Arrays e Loops</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-introducao-ts-v3">Introdução a TypeScript</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-objetos-v3">Objetos</a></li>
+            </ul>
+        </li>
+        <li>
+            <summary>Modulo 02</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/exercicios-backend-metodos-arrays-3-v3">Métodos de Arrays</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-metodos-arrays-v3">Métodos de Arrays</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-metodos-arrays-v3">Métodos de Arrays</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-tipos-utilitarios-v3">Tipos e Utilitários</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-condicionais-v3">Condicionais</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-metodos-string-v3">Métodos de String</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-typescript-tipos-dados">Tipos de Dados</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-typescript-tipos-dados-2">Tipos de Dados</a></li>
+            </ul>
+        </li>
+        <li>
+            <summary>Modulo 03</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/exercicios-backend-orientacao-objetos-v3">Orientação a Objetos</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-primeiro-servidor-v3">Primeiro Servidor</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-testes-automatizados-v3">Testes Automatizados</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-api-rest-v3">API REST</a></li>
+                <li><a href="https://github.com/gersg/exercicios-rotas-intermediarios-controladores-v3">Rotas, Intermediários e Controladores</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-tratamento-erros-v3">Tratamento de Erros</a></li>
+            </ul>
+        </li>
+        <li>
+            <summary>Modulo 04</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/exercicios-backend-crud-sql-v3">CRUD com SQL</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-modelagem-dados-v3">Modelagem de Dados</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-consultas-sql-v3">Consultas SQL</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-agrupamento-relacionamento-tabelas-v3">Agrupamento e Relacionamento de Tabelas</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-conexao-node-postgres-v3">Conexão Node.js com PostgreSQL</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-introducao-banco-dados-v3">Introdução a Bancos de Dados</a></li>
+                <li><a href="https://github.com/gersg/exercicios-backend-introducao-docker-v3">Introdução a Docker</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+    <li>
+            <summary>Desafios</summary>
+        <ul>
+            <li>
+                <summary>BACK END</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/desafio-backend-modulo-01-dbe-t08-dds-t17">Modulo 01</a></li>
+                <li><a href="https://github.com/gersg/desafio-backend-modulo-02-dbe-t08-dds-t17">Modulo 02</a></li>
+                <li><a href="https://github.com/gersg/desafio-backend-modulo-03-dbe-t08-dds-t17">Modulo 03</a></li>
+                <li><a href="https://github.com/gersg/desafio-backend-modulo-04-dbe-t08-dds-t17">Modulo 04</a></li>
+            </ul>
+        </li>
+        <li>
+            <summary>CARREIRA</summary>
+            <ul>
+                <li><a href="https://github.com/gersg/gersg">Currículo</a></li>
+            </ul>
+        </li>
+    </li>
+    </ul>
+
+
+<h2>Escola da Nuvem - AWS Cloud Practitioner</h2>
+
+<ul>
+  <li><summary><strong>Simulados</strong></summary>
+    <ul>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">Oficiais</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">Extras</a></li>
+    </ul>
+  </li>
+  <li><summary><strong>Conteudos</strong></summary>
+    <ul>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">Material</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">Knowledge Checks</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">Labs</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/communication">Recursos e Ferramentas</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/teamwork">Material complementar</a></li>
+      <li><a href="https://github.com/gersg/Jornada-Dev/tree/main/skills/soft-skills/problem-solving">Resumos</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+<h2>Estatísticas do GitHub</h2>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=gersg&show_icons=true&hide_title=true&hide_border=true" alt="Estatísticas do GitHub" />
+</p>
+
+<h2>Atividades Recentes</h2>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gersg&hide_title=true&hide_border=true" alt="Streak" />
+</p>
+
+  <h2>Projetos</h2>
+
+<details>
+  <summary>Profissionais</summary>
+  <ul>
+    <li>
+      <a href="https://github.com/gersg/RecruitPA">
+        <strong>RecruitPA</strong>
+      </a>
+      <p>Projeto Recruit, plataforma de conexão para gestores, recrutadores, empresas e profissionais em busca de recolocação ou iniciar sua vida profissional. Utilizando tecnologia, preparo, educação e encaminhamento dos melhores perfis para as demandas ofertadas. Contando com uma equipe de psicólogos, recrutadores, unindo testes, entrevistas, e um espaço para treinamentos, lives, imersões, além de diversos vídeos gratuitos. Criamos nosso banco de talentos sempre afunilando as hard skills e conectando os profissionais às empresas que mais se encaixam em fit cultural.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Ancestral">
+        <strong>Instituto Ancestral</strong>
+      </a>
+      <p>Nosso propósito vai além de simplesmente preservar. Buscamos uma revitalização ativa das tradições culturais e ambientais, integrando práticas ancestrais com soluções contemporâneas para enfrentar os desafios atuais e moldar um futuro sustentável.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Cocria">
+        <strong>Cocria</strong>
+      </a>
+      <p>A Cocria é uma plataforma digital inovadora que surge com a missão de conectar produtores culturais, empresas e órgãos governamentais a oportunidades de financiamento e apoio para projetos de impacto social, cultural e ambiental. Nossa plataforma foi projetada para democratizar o acesso a informações e recursos essenciais, criando um ambiente colaborativo e inclusivo que impulsiona o desenvolvimento de projetos significativos e transformadores.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Achou">
+        <strong>Achou!</strong>
+      </a>
+      <p>A Achou! é uma plataforma inovadora que simplifica o processo de encontrar e contratar profissionais temporários e por diária. Nossa missão é conectar empresas com os talentos certos de maneira eficiente e confiável.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Acolher">
+        <strong>Acolher</strong>
+      </a>
+      <p>É uma startup dedicada ao atendimento psicológico e ao acolhimento de pessoas em busca de apoio emocional e saúde mental. Fundada por Kelen de Carvalho Espíndola, psicóloga clínica apaixonada pela arte de cuidar das pessoas, a Acolher tem como missão proporcionar um ambiente seguro e compassivo onde cada pessoa possa explorar suas emoções e desafios de vida.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg">
+        <strong>PulseIA</strong>
+      </a>
+      <p>É uma empresa inovadora em inteligência artificial que desenvolve soluções tecnológicas para otimizar processos e operações empresariais. Nossa missão é transformar a maneira como as empresas utilizam dados e automação, oferecendo ferramentas e tecnologias que aumentam a eficiência e aprimoram a experiência do usuário. Com um foco em inovação, a PulseIA está posicionada para liderar no avanço das capacidades digitais e ajudar empresas a prosperar na era moderna.</p>
+    </li>
+  </ul>
+</details>
+<details>
+  <summary>Academicos</summary>
+  <ul>
+    <li>
+      <a href="https://github.com/gersg/RecruitPA">
+        <strong>RecruitPA</strong>
+      </a>
+      <p>Projeto de pratica academica</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Ancestral">
+        <strong>Instituto Ancestral</strong>
+      </a>
+      <p>Projeto de treino academico.</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Cocria">
+        <strong>Cocria</strong>
+      </a>
+      <p>CProjeto de psicólogos</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Achou">
+        <strong>Achou!</strong>
+      </a>
+      <p>desenvolver api rest para psicólogos agendamento</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg/Acolher">
+        <strong>praticando POO</strong>
+      </a>
+      <p>CProjeto academico</p>
+    </li>
+<br>
+    <li>
+      <a href="https://github.com/gersg">
+        <strong>Calculadora</strong>
+      </a>
+      <p>Criar e desenvolver uma calculadora de tempo de atendimento para psicólogos.</p>
+    </li>
+  </ul>
+</details>
+
+
+
+
+
+<footer style="background-color: #f4f4f4; padding: 20px; text-align: center; border-top: 1px solid #ddd;"> 
+  
+  <div>
+    <p>© 2024 Gerson Espindola. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
