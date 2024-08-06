@@ -69,7 +69,7 @@
             <li>
                 <summary>BACK END</summary>
             <ul>
-                <li><a href="https://github.com/gersg/desafio-backend-modulo-01-dbe-t08-dds-t17">Modulo 01</a></li>
+                <li><a href="https://www.hackerrank.com/contests/desafio-de-logica-modulo-1-dds-t17/challenges">Modulo 01</a></li>
                 <li><a href="https://github.com/gersg/desafio-backend-modulo-02-dbe-t08-dds-t17">Modulo 02</a></li>
                 <li><a href="https://github.com/gersg/desafio-backend-modulo-03-dbe-t08-dds-t17">Modulo 03</a></li>
                 <li><a href="https://github.com/gersg/desafio-backend-modulo-04-dbe-t08-dds-t17">Modulo 04</a></li>
