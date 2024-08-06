@@ -1,13 +1,17 @@
-<p align="middle"><img align="center" matrix src="https://github.com/gersg.png?size=200"></p > 
-<h3 align="middle">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
-<h1 align="left "> Gerson Luiz Espindola Gondim </h1>
+<h1 align="center"> Gerson Luiz Espindola Gondim </h1>
+<h3 align="center">“Eu quero criar um barulho no universo.”  Steve Jobs.</h3>
+
+<h2>Sobre Mim</h2>
+<p>      
+  Sou um profissional em transição de carreira, com uma forte inclinação para inovação e resultados. Minha trajetória diversificada me equipou com uma ampla gama de habilidades, incluindo liderança técnica, desenvolvimento de soluções criativas e uma abordagem analítica para resolução de problemas.
+
+  Com uma visão focada e uma determinação inabalável, estou sempre em busca de desafios que me permitam aplicar minha experiência e conhecimento para gerar impacto significativo. Minha paixão por tecnologia e minha capacidade de adaptação me tornam um ativo valioso em qualquer equipe ou projeto.
+</p>
+<p align="center">
+    <a align="left" href="https://github.com/gersg"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"> </a>
     <a align="left" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
     <br >
 </p>
-<br>
-<h2>Sobre Mim</h2>
-    <p>
-     Sou um profissional com 38 anos de experiência, atualmente em uma fase de transição de carreira com foco em tecnologia e inovação. Minha jornada é marcada pela busca constante de excelência e pela vontade de impactar positivamente o mundo ao meu redor.
 
 </p>
 
@@ -126,6 +130,7 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+
 </p>
 
 <h2>Estatísticas do GitHub</h2>
@@ -235,11 +240,11 @@
 
 
 
+
+
 <footer style="background-color: #f4f4f4; padding: 20px; text-align: center; border-top: 1px solid #ddd;"> 
   
   <div>
     <p>© 2024 Gerson Espindola. Todos os direitos reservados.</p>
   </div>
 </footer>
-
-
