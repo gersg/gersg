@@ -71,7 +71,7 @@
             <summary>Desafios</summary>
         <ul>
             <li>
-                <summary>BACK END</summary>
+                <summary>Backend</summary>
             <ul>
                 <li><a href="https://www.hackerrank.com/contests/desafio-de-logica-modulo-1-dds-t17/challenges">Modulo 01</a></li>
                 <li><a href="https://github.com/gersg/desafio-backend-modulo-02-dbe-t08-dds-t17">Modulo 02</a></li>
@@ -80,7 +80,7 @@
             </ul>
         </li>
         <li>
-            <summary>CARREIRA</summary>
+            <summary>Carreira</summary>
             <ul>
                 <li><a href="https://github.com/gersg/gersg">Currículo</a></li>
             </ul>
