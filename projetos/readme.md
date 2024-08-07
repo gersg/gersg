@@ -91,29 +91,3 @@ Thank you for visiting my GitHub! Let's make amazing things together!
 ---
 
 
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  h1, h2, h3 {
-    color: #444;
-  }
-  .badge {
-    margin: 5px;
-    padding: 5px 10px;
-    background-color: #e7e7e7;
-    border-radius: 5px;
-  }
-  .project {
-    margin: 20px 0;
-  }
-  .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-  }
-</style>
