@@ -9,7 +9,7 @@
 </p>
 <p align="center">
     <a align="left" href="https://github.com/gersg"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"> </a>
-    <a align="left" href="hhttps://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
+    <a align="left" href="https://www.linkedin.com/in/gersg/"> <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"> </a> 
     <br >
 </p>
 
