@@ -66,8 +66,7 @@
                 <li><a href="https://github.com/gersg/exercicios-backend-autenticacao-criptografia-v3">exercicios-backend-autenticacao-criptografia</a></li>
                 <li><a href="https://github.com/gersg/exercicios-backend-integracao-api-terceiro-v3">exercicios-backend-integracao-api-terceiro</a></li>
                 <li><a href="https://github.com/gersg/exercicios-backend-orm-1-v3">exercicios-backend-orm-1</a></li>
-                <li><a href="https://github.com/gersg/exercicios-backend-orm-2-v3">exercicios-backend-orm-2</a></li>
-                                                   
+                <li><a href="https://github.com/gersg/exercicios-backend-orm-2-v3">exercicios-backend-orm-2</a></li>                                                   
             </ul>
         </li>
     </ul>
