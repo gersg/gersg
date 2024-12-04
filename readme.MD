@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Em%20Construção-yellow?style=flat-square" alt="Em Construção" />
   <br />
-  Este perfil está em construção. Novas atualizações em breve!
+  Este perfil está em construção. Novas atualizações em breve!🚧 🔨
 </p>
 <p align="center">
   <a href="https://github.com/gersg">
