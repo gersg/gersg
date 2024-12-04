@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualizador de Experimentos Biológicos Espaciais</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <style>
+            .neumorphic {
+                background: #e0e5ec;
+                box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+            }
+            .dark .neumorphic {
+                background: #2d3748;
+                box-shadow: 9px 9px 16px rgba(0,0,0,0.4), -9px -9px 16px  rgba(255,255,255,0.1);
+            }
+            .chart-container {
+                position: relative;
+                height: 40vh;
+                width: 80vw;
+            }
+        </style>
+    </head>
+    <!-- ... (mantenha o conteúdo anterior do head) ... -->
+    <style>
+        /* ... (estilos anteriores) ... */
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 transition-colors duration-200">
+    <div class="container mx-auto px-4 py-8">
+        <!-- ... (mantenha o conteúdo anterior do body) ... -->
+
+        <main>
+            <section id="timeline" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Linha do Tempo</h2>
+                <div id="timelineChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <!-- ... (outras seções) ... -->
+
+            <section id="physiologicalChanges" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Mudanças Fisiológicas</h2>
+                <div id="physiologicalChangesChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <!-- Nova seção para o gráfico de rede -->
+            <section id="experimentNetwork" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Rede de Relações do Experimento</h2>
+                <div id="networkChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <!-- ... (outras seções) ... -->
+        </main>
+    </div>
+
+    <script>
+        // ... (mantenha as funções e variáveis globais anteriores) ...
+
+        // Novas funções para criar visualizações D3.js
+
+        function createTimelineD3() {
+            const width = document.getElementById('timelineChart').clientWidth;
+            const height = 400;
+            const margin = {top: 20, right: 20, bottom: 30, left: 50};
+
+            const svg = d3.select("#timelineChart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Dados de exemplo
+            const data = [
+                {date: new Date("2023-01-01"), event: "Lançamento"},
+                {date: new Date("2023-03-15"), event: "Experimento 1"},
+                {date: new Date("2023-06-01"), event: "Experimento 2"},
+                {date: new Date("2023-09-30"), event: "Retorno"}
+            ];
+
+            const x = d3.scaleTime()
+                .domain(d3.extent(data, d => d.date))
+                .range([0, width - margin.left - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([0, data.length - 1])
+                .range([height - margin.top - margin.bottom, 0]);
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
+                .call(d3.axisBottom(x));
+
+            svg.selectAll("circle")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", d => x(d.date))
+                .attr("cy", (d, i) => y(i))
+                .attr("r", 8)
+                .attr("fill", "steelblue");
+
+            svg.selectAll("text")
+                .data(data)
+                .enter()
+                .append("text")
+                .attr("x", d => x(d.date))
+                .attr("y", (d, i) => y(i) - 15)
+                .text(d => d.event)
+                .attr("text-anchor", "middle")
+                .attr("font-size", "12px");
+        }
+
+        function createPhysiologicalChangesD3() {
+            const width = document.getElementById('physiologicalChangesChart').clientWidth;
+            const height = 400;
+            const margin = {top: 20, right: 20, bottom: 30, left: 50};
+
+            const svg = d3.select("#physiologicalChangesChart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Dados de exemplo
+            const data = [
+                {day: 1, densidadeOssea: 100, massaMuscular: 100},
+                {day: 5, densidadeOssea: 98, massaMuscular: 97},
+                {day: 10, densidadeOssea: 95, massaMuscular: 94},
+                {day: 15, densidadeOssea: 93, massaMuscular: 92},
+                {day: 20, densidadeOssea: 90, massaMuscular: 89}
+            ];
+
+            const x = d3.scaleLinear()
+                .domain(d3.extent(data, d => d.day))
+                .range([0, width - margin.left - margin.right]);
+
+            const y = d3.scaleLinear()
+                .domain([85, 100])
+                .range([height - margin.top - margin.bottom, 0]);
+
+            const line = d3.line()
+                .x(d => x(d.day))
+                .y(d => y(d.densidadeOssea));
+
+            const line2 = d3.line()
+                .x(d => x(d.day))
+                .y(d => y(d.massaMuscular));
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
+                .call(d3.axisBottom(x).ticks(5));
+
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 2)
+                .attr("d", line);
+
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "red")
+                .attr("stroke-width", 2)
+                .attr("d", line2);
+
+            // Legenda
+            svg.append("circle").attr("cx", 10).attr("cy", 10).attr("r", 6).style("fill", "steelblue");
+            svg.append("circle").attr("cx", 10).attr("cy", 40).attr("r", 6).style("fill", "red");
+            svg.append("text").attr("x", 20).attr("y", 10).text("Densidade Óssea").style("font-size", "15px").attr("alignment-baseline","middle");
+            svg.append("text").attr("x", 20).attr("y", 40).text("Massa Muscular").style("font-size", "15px").attr("alignment-baseline","middle");
+        }
+
+        function createNetworkD3() {
+            const width = document.getElementById('networkChart').clientWidth;
+            const height = 400;
+
+            const svg = d3.select("#networkChart")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            const data = {
+                nodes: [
+                    {id: "Experimento"},
+                    {id: "Sujeitos"},
+                    {id: "Ambiente Espacial"},
+                    {id: "Densidade Óssea"},
+                    {id: "Massa Muscular"},
+                    {id: "Radiação"},
+                    {id: "Microgravidade"}
+                ],
+                links: [
+                    {source: "Experimento", target: "Sujeitos"},
+                    {source: "Experimento", target: "Ambiente Espacial"},
+                    {source: "Sujeitos", target: "Densidade Óssea"},
+                    {source: "Sujeitos", target: "Massa Muscular"},
+                    {source: "Ambiente Espacial", target: "Radiação"},
+                    {source: "Ambiente Espacial", target: "Microgravidade"},
+                    {source: "Radiação", target: "Densidade Óssea"},
+                    {source: "Microgravidade", target: "Massa Muscular"}
+                ]
+            };
+
+            const simulation = d3.forceSimulation(data.nodes)
+                .force("link", d3.forceLink(data.links).id(d => d.id))
+                .force("charge", d3.forceManyBody().strength(-400))
+                .force("center", d3.forceCenter(width / 2, height / 2));
+
+            const link = svg.append("g")
+                .selectAll("line")
+                .data(data.links)
+                .enter().append("line")
+                .attr("class", "link");
+
+            const node = svg.append("g")
+                .selectAll(".node")
+                .data(data.nodes)
+                .enter().append("g")
+                .attr("class", "node")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            node.append("circle")
+                .attr("r", 10);
+
+            node.append("text")
+                .attr("dx", 12)
+                .attr("dy", ".35em")
+                .text(d => d.id);
+
+            simulation.on("tick", () => {
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        }
+
+        function updateCharts() {
+            // Limpar os gráficos existentes
+            document.getElementById('timelineChart').innerHTML = '';
+            document.getElementById('physiologicalChangesChart').innerHTML = '';
+            document.getElementById('networkChart').innerHTML = '';
+
+            // Recriar os gráficos com D3.js
+            createTimelineD3();
+            createPhysiologicalChangesD3();
+            createNetworkD3();
+
+            // Manter os outros gráficos Chart.js
+            createSubjectGroupsChart();
+            createComparisonChart();
+        }
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCharts();
+        });
+
+        // ... (mantenha as outras funções) ...
+    </script>
+</body>
+</html>

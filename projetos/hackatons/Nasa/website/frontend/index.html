@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Experimentos Biológicos Espaciais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .neumorphic {
+            background: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+        }
+        .dark .neumorphic {
+            background: #2d3748;
+            box-shadow: 9px 9px 16px rgba(0,0,0,0.4), -9px -9px 16px  rgba(255,255,255,0.1);
+        }
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 transition-colors duration-200">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-4">Visualizador de Experimentos Biológicos Espaciais</h1>
+            <nav class="flex justify-center space-x-4">
+                <button id="osd379Btn" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">OSD-379</button>
+                <button id="osd665Btn" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">OSD-665</button>
+                <button id="darkModeToggle" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">🌓</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="timeline" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Linha do Tempo</h2>
+                <div id="timelineChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="subjectGroups" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Grupos de Sujeitos</h2>
+                <div id="subjectGroupsChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="physiologicalChanges" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Mudanças Fisiológicas</h2>
+                <div id="physiologicalChangesChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="comparison" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Comparação: Espacial vs. Terrestre</h2>
+                <div id="comparisonChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="relatedExperiments" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Experimentos Relacionados</h2>
+                <div id="relatedExperimentsList" class="neumorphic rounded-lg p-4">
+                    <!-- Lista de experimentos relacionados será inserida aqui -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Variáveis globais
+        let currentExperiment = 'OSD-379';
+        let darkMode = false;
+
+        // Funções de utilidade
+        function toggleDarkMode() {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark');
+        }
+
+        function changeExperiment(experiment) {
+            currentExperiment = experiment;
+            // Atualizar visualizações com novos dados
+            updateCharts();
+        }
+
+        // Configuração de eventos
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+        document.getElementById('osd379Btn').addEventListener('click', () => changeExperiment('OSD-379'));
+        document.getElementById('osd665Btn').addEventListener('click', () => changeExperiment('OSD-665'));
+
+        // Funções para criar e atualizar gráficos
+        function createTimelineChart() {
+            const ctx = document.getElementById('timelineChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Lançamento', 'Experimento 1', 'Experimento 2', 'Retorno'],
+                    datasets: [{
+                        label: 'Eventos',
+                        data: [0, 10, 20, 30],
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createSubjectGroupsChart() {
+            const ctx = document.getElementById('subjectGroupsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Grupo A', 'Grupo B', 'Grupo C'],
+                    datasets: [{
+                        label: 'Número de Sujeitos',
+                        data: [12, 19, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function createPhysiologicalChangesChart() {
+            const ctx = document.getElementById('physiologicalChangesChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Dia 1', 'Dia 5', 'Dia 10', 'Dia 15', 'Dia 20'],
+                    datasets: [{
+                        label: 'Densidade Óssea',
+                        data: [100, 98, 95, 93, 90],
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    }, {
+                        label: 'Massa Muscular',
+                        data: [100, 97, 94, 92, 89],
+                        borderColor: 'rgb(255, 99, 132)',
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createComparisonChart() {
+            const ctx = document.getElementById('comparisonChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Densidade Óssea', 'Massa Muscular', 'Função Cardiovascular'],
+                    datasets: [{
+                        label: 'Espacial',
+                        data: [85, 80, 90],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgb(75, 192, 192)',
+                        borderWidth: 1
+                    }, {
+                        label: 'Terrestre',
+                        data: [100, 100, 100],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateCharts() {
+            // Aqui você atualizaria os dados dos gráficos com base no experimento selecionado
+            console.log(`Atualizando gráficos para o experimento ${currentExperiment}`);
+            // Por enquanto, vamos apenas recriar os gráficos
+            createTimelineChart();
+            createSubjectGroupsChart();
+            createPhysiologicalChangesChart();
+            createComparisonChart();
+        }
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            createTimelineChart();
+            createSubjectGroupsChart();
+            createPhysiologicalChangesChart();
+            createComparisonChart();
+        });
+
+        // Simular carregamento de experimentos relacionados
+        function loadRelatedExperiments() {
+            const relatedExperiments = [
+                { id: 'OSD-380', name: 'Efeitos da Microgravidade em Plantas' },
+                { id: 'OSD-381', name: 'Comportamento de Fluidos no Espaço' },
+                { id: 'OSD-382', name: 'Crescimento de Cristais em Órbita' }
+            ];
+
+            const list = document.getElementById('relatedExperimentsList');
+            list.innerHTML = relatedExperiments.map(exp => 
+                `<div class="mb-2">
+                    <a href="#" class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-100">
+                        ${exp.id}: ${exp.name}
+                    </a>
+                </div>`
+            ).join('');
+        }
+
+        loadRelatedExperiments();
+
+        // Tour interativo (exemplo básico)
+        function startTour() {
+            const tour = [
+                { element: 'header', message: 'Bem-vindo ao Visualizador de Experimentos Biológicos Espaciais!' },
+                { element: '#osd379Btn', message: 'Clique aqui para ver dados do experimento OSD-379' },
+                { element: '#osd665Btn', message: 'Clique aqui para ver dados do experimento OSD-665' },
+                { element: '#darkModeToggle', message: 'Alterne entre modo claro e escuro' },
+                { element: '#timeline', message: 'Visualize a linha do tempo dos eventos-chave' },
+                { element: '#subjectGroups', message: 'Veja o número de sujeitos por grupo' },
+                { element: '#physiologicalChanges', message: 'Analise as mudanças fisiológicas ao longo do tempo' },
+                { element: '#comparison', message: 'Compare resultados entre experimentos espaciais e terrestres' },
+                { element: '#relatedExperiments', message: 'Descubra experimentos relacionados' }
+            ];
+
+            let step = 0;
+            function showNextStep() {
+                if (step < tour.length) {
+                    const { element, message } = tour[step];
+                    const el = document.querySelector(element);
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    alert(message);
+                    step++;
+                } else {
+                    alert('Tour concluído! Explore a ferramenta por conta própria.');
+                }
+            }
+
+            showNextStep();
+            document.body.addEventListener('click', showNextStep);
+        }
+
+        // Inicie o tour automaticamente na primeira visita (você pode ajustar isso conforme necessário)
+        if (!localStorage.getItem('tourCompleted')) {
+            startTour();
+            localStorage.setItem('tourCompleted', 'true');
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Experimentos Biológicos Espaciais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .neumorphic {
+            background: #e0e5ec;
+            box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+        }
+        .dark .neumorphic {
+            background: #2d3748;
+            box-shadow: 9px 9px 16px rgba(0,0,0,0.4), -9px -9px 16px  rgba(255,255,255,0.1);
+        }
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 transition-colors duration-200">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-4">Visualizador de Experimentos Biológicos Espaciais</h1>
+            <nav class="flex justify-center space-x-4">
+                <button id="osd379Btn" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">OSD-379</button>
+                <button id="osd665Btn" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">OSD-665</button>
+                <button id="darkModeToggle" class="neumorphic px-4 py-2 rounded-lg text-gray-800 dark:text-white">🌓</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="timeline" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Linha do Tempo</h2>
+                <div id="timelineChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="subjectGroups" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Grupos de Sujeitos</h2>
+                <div id="subjectGroupsChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="physiologicalChanges" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Mudanças Fisiológicas</h2>
+                <div id="physiologicalChangesChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="comparison" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Comparação: Espacial vs. Terrestre</h2>
+                <div id="comparisonChart" class="chart-container neumorphic rounded-lg p-4"></div>
+            </section>
+
+            <section id="relatedExperiments" class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Experimentos Relacionados</h2>
+                <div id="relatedExperimentsList" class="neumorphic rounded-lg p-4">
+                    <!-- Lista de experimentos relacionados será inserida aqui -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Variáveis globais
+        let currentExperiments = 'OSD-379';
+        let darkModes = false;
+
+        // Funções de utilidade
+        function toggleDarkMode() {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark');
+        }
+
+        function changeExperiment(experiment) {
+            currentExperiment = experiment;
+            // Atualizar visualizações com novos dados
+            updateCharts();
+        }
+
+        // Configuração de eventos
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+        document.getElementById('osd379Btn').addEventListener('click', () => changeExperiment('OSD-379'));
+        document.getElementById('osd665Btn').addEventListener('click', () => changeExperiment('OSD-665'));
+
+        // Funções para criar e atualizar gráficos
+        function createTimelineChart() {
+            const ctx = document.getElementById('timelineChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Lançamento', 'Experimento 1', 'Experimento 2', 'Retorno'],
+                    datasets: [{
+                        label: 'Eventos',
+                        data: [0, 10, 20, 30],
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createSubjectGroupsChart() {
+            const ctx = document.getElementById('subjectGroupsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Grupo A', 'Grupo B', 'Grupo C'],
+                    datasets: [{
+                        label: 'Número de Sujeitos',
+                        data: [12, 19, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function createPhysiologicalChangesChart() {
+            const ctx = document.getElementById('physiologicalChangesChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Dia 1', 'Dia 5', 'Dia 10', 'Dia 15', 'Dia 20'],
+                    datasets: [{
+                        label: 'Densidade Óssea',
+                        data: [100, 98, 95, 93, 90],
+                        borderColor: 'rgb(75, 192, 192)',
+                        tension: 0.1
+                    }, {
+                        label: 'Massa Muscular',
+                        data: [100, 97, 94, 92, 89],
+                        borderColor: 'rgb(255, 99, 132)',
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createComparisonChart() {
+            const ctx = document.getElementById('comparisonChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Densidade Óssea', 'Massa Muscular', 'Função Cardiovascular'],
+                    datasets: [{
+                        label: 'Espacial',
+                        data: [85, 80, 90],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgb(75, 192, 192)',
+                        borderWidth: 1
+                    }, {
+                        label: 'Terrestre',
+                        data: [100, 100, 100],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateCharts() {
+            // Aqui você atualizaria os dados dos gráficos com base no experimento selecionado
+            console.log(`Atualizando gráficos para o experimento ${currentExperiment}`);
+            // Por enquanto, vamos apenas recriar os gráficos
+            createTimelineChart();
+            createSubjectGroupsChart();
+            createPhysiologicalChangesChart();
+            createComparisonChart();
+        }
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            createTimelineChart();
+            createSubjectGroupsChart();
+            createPhysiologicalChangesChart();
+            createComparisonChart();
+        });
+
+        // Simular carregamento de experimentos relacionados
+        function loadRelatedExperiments() {
+            const relatedExperiments = [
+                { id: 'OSD-380', name: 'Efeitos da Microgravidade em Plantas' },
+                { id: 'OSD-381', name: 'Comportamento de Fluidos no Espaço' },
+                { id: 'OSD-382', name: 'Crescimento de Cristais em Órbita' }
+            ];
+
+            const list = document.getElementById('relatedExperimentsList');
+            list.innerHTML = relatedExperiments.map(exp => 
+                `<div class="mb-2">
+                    <a href="#" class="text-blue-500 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-100">
+                        ${exp.id}: ${exp.name}
+                    </a>
+                </div>`
+            ).join('');
+        }
+
+        loadRelatedExperiments();
+
+        // Tour interativo (exemplo básico)
+        function startTour() {
+            const tour = [
+                { element: 'header', message: 'Bem-vindo ao Visualizador de Experimentos Biológicos Espaciais!' },
+                { element: '#osd379Btn', message: 'Clique aqui para ver dados do experimento OSD-379' },
+                { element: '#osd665Btn', message: 'Clique aqui para ver dados do experimento OSD-665' },
+                { element: '#darkModeToggle', message: 'Alterne entre modo claro e escuro' },
+                { element: '#timeline', message: 'Visualize a linha do tempo dos eventos-chave' },
+                { element: '#subjectGroups', message: 'Veja o número de sujeitos por grupo' },
+                { element: '#physiologicalChanges', message: 'Analise as mudanças fisiológicas ao longo do tempo' },
+                { element: '#comparison', message: 'Compare resultados entre experimentos espaciais e terrestres' },
+                { element: '#relatedExperiments', message: 'Descubra experimentos relacionados' }
+            ];
+
+            let step = 0;
+            function showNextStep() {
+                if (step < tour.length) {
+                    const { element, message } = tour[step];
+                    const el = document.querySelector(element);
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    alert(message);
+                    step++;
+                } else {
+                    alert('Tour concluído! Explore a ferramenta por conta própria.');
+                }
+            }
+
+            showNextStep();
+            document.body.addEventListener('click', showNextStep);
+        }
+
+        // Inicie o tour automaticamente na primeira visita (você pode ajustar isso conforme necessário)
+        if (!localStorage.getItem('tourCompleted')) {
+            startTour();
+            localStorage.setItem('tourCompleted', 'true');
+        }
+    </script>
+</body>
+</html>
