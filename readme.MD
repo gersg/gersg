@@ -84,7 +84,7 @@
 <p><ul>
 
 </p></ul>
-<h2>Estatísticas do GitHub</h2>
+
 # 🚀 Minhas Estatísticas no GitHub
 
 ## 📊 Estatísticas Gerais
