@@ -1,3 +1,5 @@
+<img id="profile-img" src="gerson_avatar.png" alt="foto do avatar de Gerson">
+
 <h1 align="center">Olá, eu sou o Gerson Espindola 👋</h1>
 <h3 align="center">Atualmente em transição profissional, Um desenvolvedor apaixonado por tecnologia</h3>
 <!-- Mensagem de construção -->
