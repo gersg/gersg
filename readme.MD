@@ -20,12 +20,9 @@
 
 <h2>Sobre Mim</h2>
 <p>
-    Hoje, estou me dedicando à formação em desenvolvimento de software fullstack, enfrentando desafios diários com resiliência e determinação. Minha jornada é impulsionada pelo desejo de aprender continuamente e de construir soluções que causem impacto.
-    
-    Sou apaixonado por resolver problemas, colaborar com equipes e transformar ideias em realidade. Minha experiência em liderança, criatividade e conexão humana agora se une às habilidades técnicas que estou desenvolvendo, como programação fullstack.
-    
-    Acredito que nunca é tarde para recomeçar e que cada desafio enfrentado nos fortalece para o próximo. Estou em busca de oportunidades para aplicar minhas novas habilidades, contribuir com projetos inovadores e continuar a evoluir como profissional e ser humano.
-    
+    Hoje, estou me dedicando à formação em desenvolvimento de software fullstack, enfrentando desafios diários com resiliência e determinação. Minha jornada é impulsionada pelo desejo de aprender continuamente e de construir soluções que causem impacto.    
+    Sou apaixonado por resolver problemas, colaborar com equipes e transformar ideias em realidade. Minha experiência em liderança, criatividade e conexão humana agora se une às habilidades técnicas que estou desenvolvendo, como programação fullstack.    
+    Acredito que nunca é tarde para recomeçar e que cada desafio enfrentado nos fortalece para o próximo. Estou em busca de oportunidades para aplicar minhas novas habilidades, contribuir com projetos inovadores e continuar a evoluir como profissional e ser humano.    
     Se você também acredita no poder da transformação e da reinvenção, vamos conectar! 🚀
 </p>
 
