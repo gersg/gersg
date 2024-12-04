@@ -17,32 +17,9 @@
   <br />
   Este perfil está em construção. Novas atualizações em breve!
 </p>
----
 
-<p align="center">
-    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 200px;">
-  </p>
-  
-  <h1 align="center">
-    Hello, &lt;C𝚘𝚍𝚎𝚛𝚜/&gt;! 
-    <a target="_blank"></a> 
-    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40">
-  </h1>
-  
-  <h1 align="center">Eu sou o Gerson Espíndola</h1>
-  <h3 align="center">Atualmente em transição profissional, um desenvolvedor apaixonado por tecnologia</h3>
-  
-<!-- Mensagem de construção -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Construção-yellow?style=flat-square" alt="Em Construção" />
-  <br />
-  Este perfil está em construção. Novas atualizações em breve!
-</p>
-
-## **About Me**
+<h2>Sobre Mim</h2>
 <p>
-    Aos 38 anos, decidi dar um salto de coragem e seguir o que sempre foi meu sonho de adolescente: mergulhar no universo da tecnologia. Minha trajetória é marcada por experiências diversas, desde a liderança em projetos socioculturais e ambientais no Brasil até vivências internacionais em diferentes setores, como gastronomia e construção civil. Cada etapa me preparou para enfrentar um dos maiores desafios da minha vida: a transição de carreira.
-
     Hoje, estou me dedicando à formação em desenvolvimento de software fullstack, enfrentando desafios diários com resiliência e determinação. Minha jornada é impulsionada pelo desejo de aprender continuamente e de construir soluções que causem impacto.
     
     Sou apaixonado por resolver problemas, colaborar com equipes e transformar ideias em realidade. Minha experiência em liderança, criatividade e conexão humana agora se une às habilidades técnicas que estou desenvolvendo, como programação fullstack.
@@ -52,21 +29,20 @@
     Se você também acredita no poder da transformação e da reinvenção, vamos conectar! 🚀
 </p>
 
-## **Connect with Me:**
+<p align="center">
+    <a href="https://github.com/gersg">
+      <img src="https://img.shields.io/github/followers/gersg?style=social" alt="GitHub followers" />
+    </a>
+    <a href="https://www.linkedin.com/in/gersg/">
+      <img src="https://img.shields.io/badge/LinkedIn-GersonEspindola-blue" alt="LinkedIn Profile" />
+    </a>
+    <a href="mailto:gersgdev@gmail.com">
+      <img src="https://img.shields.io/badge/Email-gersgdev@gmail.com-red" alt="Email" />
+    </a>
+  </p>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/gersg/" target="_blank">
-    <img align="center" src="https://skillicons.dev/icons?i=linkedin" width="40px" alt="LinkedIn" />
-  </a>&emsp;
-  <a href="mailto:gersgdev@gmail.com" target="_blank">
-    <img align="center" src="https://cdn-icons-png.flaticon.com/128/888/888853.png" width="40px" alt="Mail" />
-  </a>&emsp;
-  <a href="https://wa.me/5584996104851" target="_blank">
-    <img align="center" src="https://media2.giphy.com/media/Q8I2fYA773h5wmQQcR/giphy.gif" width="40px" alt="WhatsApp" />
-  </a>&emsp;
-</p>
 
-## 💻 Tech Stack
+  ## 💻 Tech Stack
 
 ![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=%23ffffff) 
 ![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3) 
