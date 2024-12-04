@@ -53,13 +53,13 @@
   
 - 🔄 Routine: **Eat - Sleep - Code - Repeat.**
 
-- 📫 How to reach me **shubhambhati226@gmail.com**
+- 📫 How to reach me **gersgdev@gmail.com**
 
 - ⚡ Coding fact: **There are over 700 different programming languages.**
 
 - 💪🏼 Fav Quote: **Great Developers never stop learning.**
 
-- 👉 <a href="https://shubh2-0.github.io/">**Click Here**</a> to view my projects 💻. 
+- 👉 <a href="https:///">**Click Here**</a> to view my projects 💻. 
 
 
 
@@ -85,7 +85,7 @@
 <br>
 
 
-## <h3 align="left"><img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 24px>   Tech Stacks :</h3>
+## <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 24px>   Tech Stacks :
 <table align="center">
   <tr>
     <td align="center" width="150" style="padding: 10px;">
