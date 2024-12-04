@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 200px;">
+    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 350px;">
   </p>
   
   <h1 align="center">
