@@ -18,19 +18,6 @@
   Este perfil está em construção. Novas atualizações em breve!
 </p>
 ---
-
-<p align="center">
-    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 200px;">
-  </p>
-  
-  <h1 align="center">
-    Hello, &lt;C𝚘𝚍𝚎𝚛𝚜/&gt;! 
-    <a target="_blank"></a> 
-    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40">
-  </h1>
-  
-  <h1 align="center">Eu sou o Gerson Espíndola</h1>
-  <h3 align="center">Atualmente em transição profissional, um desenvolvedor apaixonado por tecnologia</h3>
   
 <!-- Mensagem de construção -->
 <p align="center">
