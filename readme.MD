@@ -65,6 +65,11 @@
 ![GitHub](https://img.shields.io/badge/-GitHub-%23181717?style=flat-square&logo=github)  
 ![NPM](https://img.shields.io/badge/-NPM-%23CB3837?style=flat-square&logo=npm) 
 ![VS Code](https://img.shields.io/badge/-VSCode-%23007ACC?style=flat-square&logo=visual-studio-code)
+![Figma](https://img.shields.io/badge/-Figma-%23F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Penpot](https://img.shields.io/badge/-Penpot-%2300BFA6?style=flat-square&logo=penpot&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-%23FCC624?style=flat-square&logo=linux&logoColor=black)
+
+
 
 
 
