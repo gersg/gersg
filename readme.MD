@@ -17,17 +17,6 @@
   <br />
   Este perfil está em construção. Novas atualizações em breve!
 </p>
-<<<<<<< HEAD
-=======
----
-  
-<!-- Mensagem de construção -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Construção-yellow?style=flat-square" alt="Em Construção" />
-  <br />
-  Este perfil está em construção. Novas atualizações em breve!
-</p>
->>>>>>> c29ed86aca0a6add31730b2ebd80ad756122ea23
 
 <h2>Sobre Mim</h2>
 <p>
