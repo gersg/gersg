@@ -85,10 +85,19 @@
 
 </p></ul>
 <h2>Estatísticas do GitHub</h2>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gersg&show_icons=true&hide_title=true&hide_border=true" alt="Estatísticas do GitHub" />
-</p>
-<h2>Atividades Recentes</h2>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gersg&hide_title=true&hide_border=true" alt="Streak" />
-</p>
+# 🚀 Minhas Estatísticas no GitHub
+
+## 📊 Estatísticas Gerais
+![Gerson's GitHub Stats](https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=radical&hide=issues,contribs&include_all_commits=true)
+
+## 🌟 Linguagens Mais Usadas
+![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=seu-usuario&layout=compact&theme=radical)
+
+## 🏆 Troféus do GitHub
+![Troféus do GitHub](https://github-profile-trophy.vercel.app/?username=seu-usuario&theme=gruvbox&no-bg=true&no-frame=true)
+
+## 📈 Gráfico de Atividade
+![Gráfico de Atividade](https://github-readme-activity-graph.vercel.app/graph?username=seu-usuario&theme=dracula)
+
+## 📅 Contribuições Recentes
+[![GitHub Streak](https://streak-stats.demolab.com?user=seu-usuario&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
