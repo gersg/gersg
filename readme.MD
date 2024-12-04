@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 350px;">
+    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 250px;">
   </p>
   
   <h1 align="center">
@@ -9,7 +9,7 @@
   </h1>
   
   <h1 align="center">Eu sou o Gerson Espíndola</h1>
-  <h3 align="center">Atualmente em transição profissional, um desenvolvedor apaixonado por tecnologia</h3>
+  <h3 align="center"></h3>
   
 <!-- Mensagem de construção -->
 <p align="center">
