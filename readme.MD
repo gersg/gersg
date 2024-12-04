@@ -85,19 +85,19 @@
 
 </p></ul>
 
-# 🚀 Minhas Estatísticas no GitHub
+## 🚀 Minhas Estatísticas no GitHub
 
-## 📊 Estatísticas Gerais
+### 📊 Estatísticas Gerais
 ![Gerson's GitHub Stats](https://github-readme-stats.vercel.app/api?username=gersg&show_icons=true&theme=radical&hide=issues,contribs&include_all_commits=true)
 
-## 🌟 Linguagens Mais Usadas
+### 🌟 Linguagens Mais Usadas
 ![Linguagens Mais Usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=gersg&layout=compact&theme=radical)
 
-## 🏆 Troféus do GitHub
+### 🏆 Troféus do GitHub
 ![Troféus do GitHub](https://github-profile-trophy.vercel.app/?username=gersg&theme=gruvbox&no-bg=true&no-frame=true)
 
-## 📈 Gráfico de Atividade
+### 📈 Gráfico de Atividade
 ![Gráfico de Atividade](https://github-readme-activity-graph.vercel.app/graph?username=gersg&theme=dracula)
 
-## 📅 Contribuições Recentes
+### 📅 Contribuições Recentes
 [![GitHub Streak](https://streak-stats.demolab.com?user=gersg&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
