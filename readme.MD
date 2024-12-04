@@ -90,4 +90,4 @@
 ![Gráfico de Atividade](https://github-readme-activity-graph.vercel.app/graph?username=gersg&theme=dracula)
 
 ### 📅 Contribuições Recentes
-[![GitHub Streak](https://streak-stats.demolab.com?user=gersg&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?usename=gersg&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
