@@ -28,8 +28,6 @@
 
 ## **About Me**
 <p>
-    Aos 38 anos, decidi dar um salto de coragem e seguir o que sempre foi meu sonho de adolescente: mergulhar no universo da tecnologia. Minha trajetória é marcada por experiências diversas, desde a liderança em projetos socioculturais e ambientais no Brasil até vivências internacionais em diferentes setores, como gastronomia e construção civil. Cada etapa me preparou para enfrentar um dos maiores desafios da minha vida: a transição de carreira.
-
     Hoje, estou me dedicando à formação em desenvolvimento de software fullstack, enfrentando desafios diários com resiliência e determinação. Minha jornada é impulsionada pelo desejo de aprender continuamente e de construir soluções que causem impacto.
     
     Sou apaixonado por resolver problemas, colaborar com equipes e transformar ideias em realidade. Minha experiência em liderança, criatividade e conexão humana agora se une às habilidades técnicas que estou desenvolvendo, como programação fullstack.
