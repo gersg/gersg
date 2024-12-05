@@ -68,6 +68,7 @@
 ![Figma](https://img.shields.io/badge/-Figma-%23F24E1E?style=round&logo=figma&logoColor=white&size=100&radius=50)
 ![Penpot](https://img.shields.io/badge/-Penpot-%2300BFA6?style=round&logo=penpot&logoColor=white&size=100&radius=50)
 ![Linux](https://img.shields.io/badge/-Linux-%23FCC624?style=round&logo=linux&logoColor=black&size=100&radius=50)
+![TypeScript](https://img.shields.io/badge/-TypeScript-%233178C6?style=for-the-badge&logo=typescript&logoColor=%23ffffff&size=100&border-radius=50) 
 
 
 
