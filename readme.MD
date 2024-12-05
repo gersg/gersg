@@ -41,8 +41,6 @@
 
   ## 💻 Tech Stack
 
-Aqui estão as badges no formato solicitado:
-
 ![HTML5](https://img.shields.io/badge/HTML5-E44D27.svg?style=for-the-badge&logo=html5&logoColor=white)  
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
 ![Sass](https://img.shields.io/badge/Sass-CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)  
