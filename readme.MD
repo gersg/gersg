@@ -1,7 +1,4 @@
-<p align="center">
-    <img src="gerson_avatar.png" alt="Avatar da foto de perfil do Gerson" style="border-radius: 50%; width: 250px;">
-  </p>
-  
+ 
   <h1 align="center">
     Hello, &lt;C𝚘𝚍𝚎𝚛𝚜/&gt;! 
     <a target="_blank"></a> 
